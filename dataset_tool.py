@@ -717,8 +717,8 @@ def execute_cmdline(argv):
 
     p = add_command(    'create_from_images', 'Create dataset from a directory full of images.',
                                             'create_from_images datasets/mydataset myimagedir')
-    p.add_argument(     'CAZZO',     help='New dataset directory to be created') #tfrecord_dir
-    p.add_argument(     '/content/drive/MyDrive/Colab Notebooks/GAN_TESI/varie_prove/Custom/Dataset_prova',        help='Directory containing the images') #image_dir
+    p.add_argument(     'tfrecord_dir',     help='New dataset directory to be created')
+    p.add_argument(     'image_dir',        help='Directory containing the images') 
     p.add_argument(     '--shuffle',        help='Randomize image order (default: 1)', type=int, default=1)
 
     p = add_command(    'create_from_hdf5', 'Create dataset from legacy HDF5 archive.',

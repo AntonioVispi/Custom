@@ -594,7 +594,7 @@ def create_celebahq(tfrecord_dir, celeba_dir, delta_dir, num_threads=4, num_task
                 tfr.add_image(img)
 
 #----------------------------------------------------------------------------
-
+image_dir=........................     #INSERISCI LA DIRECTORY DEL NUOVO DATASET!!!
 def create_from_images(tfrecord_dir, image_dir, shuffle):
     print('Loading images from "%s"' % image_dir)
     image_filenames = sorted(glob.glob(os.path.join(image_dir, '*')))

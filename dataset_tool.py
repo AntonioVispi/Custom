@@ -71,7 +71,7 @@ class TFRecordExporter:
             tfr_opt = tf.python.python_io.TFRecordOptions(tf.python.python_io.TFRecordCompressionType.NONE)
             for lod in range(self.resolution_log2 - 1):
                 tfr_file = self.tfr_prefix + '-r%02d.tfrecords' % (self.resolution_log2 - lod)
-                self.tfr_writers.append(tf.python_io.TFRecordWriter(tfr_file, tfr_opt))
+                self.tfr_writers.append(tf.python.python_io.TFRecordWriter(tfr_file, tfr_opt))
         assert img.shape == self.shape
         for lod, tfr_writer in enumerate(self.tfr_writers):
             if lod:

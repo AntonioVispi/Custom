@@ -18,7 +18,7 @@ class EasyDict(dict):
 #----------------------------------------------------------------------------
 # Paths.
 
-data_dir='/content/drive/MyDrive/Dataset_Prove_Varie/Dataset_prova'
+data_dir='/datasets/mydataset'
 #data_dir = 'datasets'
 result_dir = 'results'
 
